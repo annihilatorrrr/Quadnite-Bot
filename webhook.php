@@ -231,6 +231,11 @@ function kys() {
   }
 }
 
+// Start Message
+function start() {
+  send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun. Do not promote me to an admin or I WILL hate you.');
+}
+
 // Get JSON from post, store it and decode it.
 $var = file_get_contents('php://input');
 $json = fopen('json', "w");
@@ -242,6 +247,10 @@ $decoded = json_decode($var);
 $chat_id = $decoded->{"message"}->{"chat"}->{"id"};
 
 $modules = array(
+  array(
+    "command" => "/start",
+    "function" => "start();"
+  ),
   array(
     "command" => "/word",
     "function" => "rand_words(1);"
