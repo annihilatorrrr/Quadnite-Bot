@@ -234,7 +234,8 @@ function kys() {
 // Sends back JSON
 function json() {
   global $var;
-  send_text($var);
+  $pretty_json = json_encode(json_decode($var), JSON_PRETTY_PRINT);
+  send_text($pretty_json);
 }
 // Start Message
 function start() {
