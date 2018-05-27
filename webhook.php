@@ -231,6 +231,11 @@ function kys() {
   }
 }
 
+// Sends back JSON
+function json() {
+  global $var;
+  send_text($var);
+}
 // Start Message
 function start() {
   send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun. Do not promote me to an admin or I WILL hate you.');
@@ -318,6 +323,10 @@ $modules = array(
   array(
     "command" => "/kys",
     "function" => "kys();"
+  ),
+  array(
+    "command" => "/json",
+    "function" => "json();"
   )
 );
 
