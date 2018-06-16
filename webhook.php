@@ -144,19 +144,6 @@ function rand_words($onewordmode) {
   }
 }
 
-// Checks if the domain is available
-function domain_checker() {
-  global $command_list;
-  if (isset($command_list[1])) {
-    $title=$command_list[1];
-    $title .= '.com';
-    $title = escapeshellarg($title);
-    exec("whois $title | grep 'No match' &> /dev/null && echo Domain Available || echo Domain Not Available", $output);
-    $post_text = $title ."  " . implode(' ', $output);
-    send_text($post_text);
-  }
-}
-
 function rand_question()
 {
   $questions = file('rand_questions.txt');
@@ -269,10 +256,6 @@ $modules = array(
   array(
     "command" => "/words",
     "function" => "rand_words(0);"
-  ),
-  array(
-    "command" => "/dc",
-    "function" => "domain_checker();"
   ),
   array(
     "command" => "/question",
