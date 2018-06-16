@@ -95,7 +95,7 @@ function send_html($post_message, $reply=false) {
 }
 
 // Returns Insults
-function get_insults() {
+function get_insults($username) {
   global $decoded;
   if ($decoded->{"message"}->{"from"}->{"id"} == 394312580){
     return "Sorry master, I am unable to do that.";
@@ -151,7 +151,7 @@ function domain_checker() {
     $title=$command_list[1];
     $title .= '.com';
     $title = escapeshellarg($title);
-    exec("whois $title | grep 'No match for domain' &> /dev/null && echo Domain Available || echo Domain Not Available", $output);
+    exec("whois $title | grep 'No match' &> /dev/null && echo Domain Available || echo Domain Not Available", $output);
     $post_text = $title ."  " . implode(' ', $output);
     send_text($post_text);
   }
@@ -196,6 +196,11 @@ function coin()
 
 function yes_or_no()
 {
+  global $command_list;
+  if (!isset($command_list[1])){
+    send_text('You know, you also have to ask the question.', true);
+    return false;
+  }
    $random = rand(0,1);
    if ($random == 1) {
       send_text('Yes', true);
@@ -227,7 +232,7 @@ function kys() {
     send_text($random_kys);
   }
   else {
-    send_text("Do you want to kill yourself?", true);
+    send_text("Do you want to kill yourself?\n\nIf no, reply to someone with /kys to kill them.", true);
   }
 }
 
