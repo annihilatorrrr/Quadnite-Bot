@@ -167,7 +167,17 @@ function arch_wiki()
   }
   $url = "https://wiki.archlinux.org/api.php?action=opensearch&format=json&search=" . urlencode($search_query);
   $a = json_decode(file_get_contents($url));
-  send_html("<a href='" . $a[3][0] . "'>" . $a[1][0] . "</a>");
+  $names = $a[1];
+  $urls = $a[3];
+  if (count($names) == 0) {
+    send_text("No result found", true);
+    return false;
+  }
+  $text = "Results\n";
+  for ($i = 0 ; $i < count($names) ; $i++){
+    $text .= "<a href='" . $urls[$i] . "'>" . $names[$i] . "</a>\n";
+  }
+  send_html($text);
 }
 
 function coin()
