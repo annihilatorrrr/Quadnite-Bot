@@ -3,7 +3,8 @@ word - Get a random word
 words - Get n random words
 kys - Kill yourself
 coin - Tosses a coin
-wiki - search the Arch wiki
+wiki - search Wikipedia
+arch_wiki - search the Arch wiki
 is - Is <your question>
 are - Are <your question>
 can - Can <your question>

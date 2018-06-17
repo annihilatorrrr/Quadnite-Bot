@@ -151,7 +151,7 @@ function rand_question()
   send_text($question);
 }
 
-function arch_wiki()
+function media_wiki($base_url)
 {
   global $command_list;
   $search_query = "";
@@ -165,7 +165,7 @@ function arch_wiki()
     send_text('Missing search query');
     return;
   }
-  $url = "https://wiki.archlinux.org/api.php?action=opensearch&format=json&search=" . urlencode($search_query);
+  $url = $base_url . "?action=opensearch&format=json&search=" . urlencode($search_query);
   $a = json_decode(file_get_contents($url));
   $names = $a[1];
   $urls = $a[3];
@@ -272,8 +272,12 @@ $modules = array(
     "function" => "rand_question();"
   ),
   array(
+    "command" => "/arch_wiki",
+    "function" => "media_wiki('https://wiki.archlinux.org/api.php');"
+  ),
+  array(
     "command" => "/wiki",
-    "function" => "arch_wiki();"
+    "function" => "media_wiki('https://en.wikipedia.org/w/api.php');"
   ),
   array(
     "command" => "/coin",
