@@ -133,7 +133,7 @@ function rand_words($onewordmode) {
   $num++;
   $words = array();
   if (is_integer($num)) {
-    $wordlist = file("/usr/share/dict/british");
+    $wordlist = file("/usr/share/dict/words");
     for ($word=1; $word < $num; $word++) {
       $words[] = $wordlist[rand(0,count($wordlist))];
     }
