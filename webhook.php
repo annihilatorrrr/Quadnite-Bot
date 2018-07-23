@@ -244,6 +244,10 @@ function start() {
   send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun. Do not promote me to an admin or I WILL hate you.');
 }
 
+function help() {
+  send_html('<a href="https://t.me/quadnite/9">Help Page</a>');
+}
+
 // Get JSON from post, store it and decode it.
 $var = file_get_contents('php://input');
 $json = fopen('json', "w");
@@ -330,6 +334,10 @@ $modules = array(
   array(
     "command" => "/json",
     "function" => "json();"
+  ),
+  array(
+    "command" => "/help",
+    "function" => "help();"
   )
 );
 
