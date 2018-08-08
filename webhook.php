@@ -221,8 +221,13 @@ function kys() {
   }
   elseif (isset($command_list[1])){
     $username = $command_list[1];
-    $random_kys = preg_replace('/##name##/', $username, $random_kys);
-    send_text($random_kys);
+    if ($username == "@quadnite_bot" || $username == "Quadnite" || $username == "quadnite"){
+      send_text("I can't be killed.", true);
+    }
+    else {
+      $random_kys = preg_replace('/##name##/', $username, $random_kys);
+      send_text($random_kys);
+    }
   }
   else {
     send_text("Do you want to kill yourself?\n\nIf no, reply to someone with /kys to kill them.", true);
