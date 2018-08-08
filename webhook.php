@@ -67,7 +67,6 @@ function send_text($post_message, $reply=false) {
   $result = file_get_contents($url, false, $context);
 }
 
-
 // Send html back to the sender.
 function send_html($post_message, $reply=false) {
   global $decoded;
@@ -92,6 +91,33 @@ function send_html($post_message, $reply=false) {
   );
   $context = stream_context_create($options);
   $result = file_get_contents($url, false, $context);
+}
+
+// Send gif back to the sender.
+function send_gif($gif_url, $reply=false) {
+  global $decoded;
+  global $bot_api;
+  global $chat_id;
+  $url = 'https://api.telegram.org/bot' . $bot_api . '/sendAnimation';
+  $post_msg = array('chat_id' => $chat_id, 'animation' => $gif_url );
+  if ($reply != false) {
+    if ($reply === true){
+      $post_msg['reply_to_message_id'] = $decoded->{'message'}->{'message_id'};
+    }
+    else {
+      $post_msg['reply_to_message_id'] = $reply;
+    }
+  }
+  $options = array(
+    'http' => array(
+      'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+      'method' => 'POST',
+      'content' => http_build_query($post_msg)
+    )
+  );
+  $context = stream_context_create($options);
+  $result = file_get_contents($url, false, $context);
+  return $result;
 }
 
 // Returns Insults
@@ -181,6 +207,20 @@ function coin()
    }
 }
 
+function get_gif($force) {
+  if ($force){
+    $param = "yes";
+  }
+  else {
+    $param = "no";
+  }
+  $url = "https://yesno.wtf/api?force=" . $param;
+  $result = file_get_contents($url);
+  $json = json_decode($result);
+  $image_url = $json->{"image"};
+  return $image_url;
+}
+
 function yes_or_no()
 {
   global $command_list;
@@ -188,13 +228,24 @@ function yes_or_no()
     send_text('You know, you also have to ask the question.', true);
     return false;
   }
-   $random = rand(0,1);
-   if ($random == 1) {
-      send_text('Yes', true);
-   }
-   else {
-      send_text('No', true);
-   }
+  $yes_replies = array("Yes", "Yep", "Yeah", "Yus", "Ja", "Ya", "Aye", "Ay", "Oui");
+  $no_replies = array("No", "Nopes", "Nu", "Nah", "Nein", "Naw", "Nay", "Yesn't");
+  $random = rand(0,1);
+  $random2 = rand(0, 50);
+  if ($random == 1) {
+    $yes = $yes_replies[array_rand($yes_replies)];
+    send_text($yes, true);
+    if ($random2 == 33){
+      send_gif(get_gif(True));
+    }
+  }
+  else {
+    $no = $no_replies[array_rand($no_replies)];
+    send_text($no, true);
+    if ($random2 == 33){
+      send_gif(get_gif(False));
+    }
+  }
 }
 
 // Kill yourself
