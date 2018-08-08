@@ -106,16 +106,6 @@ function get_insults($username) {
   }
 }
 
-// Logs Intruder
-function intruder() {
-  global $decoded;
-  $text = "id: " . $chat_id . "first name" . $decoded->{"message"}->{"chat"}->{"first_name"} . "\n";
-  $file=fopen('attempter','a');
-  fwrite($file,$text);
-  fclose($file);
-  send_text("You are not authorized to view the commits. Contact @ceda_ei for details");
-}
-
 // Generates random words
 function rand_words($onewordmode) {
   global $command_list;
@@ -211,6 +201,7 @@ function yes_or_no()
 function kys() {
   global $decoded;
   global $bot_name;
+  global $command_list;
   $kys = file('kys.txt');
   $random_kys = $kys[rand(0,count($kys)-1)];
   if ($decoded->{'message'}->{'reply_to_message'}->{'from'}->{'username'} == $bot_name){
@@ -226,6 +217,11 @@ function kys() {
       $first_name = $decoded->{'message'}->{'reply_to_message'}->{'from'}->{'first_name'};
       $random_kys = preg_replace('/##name##/', $first_name, $random_kys);
     }
+    send_text($random_kys);
+  }
+  elseif (isset($command_list[1])){
+    $username = $command_list[1];
+    $random_kys = preg_replace('/##name##/', $username, $random_kys);
     send_text($random_kys);
   }
   else {
@@ -250,9 +246,6 @@ function help() {
 
 // Get JSON from post, store it and decode it.
 $var = file_get_contents('php://input');
-$json = fopen('json', "w");
-fwrite($json, $var);
-fclose($json);
 $decoded = json_decode($var);
 
 // Store the chat ID
@@ -362,6 +355,4 @@ foreach ($modules as $module ) {
 if (isset($decoded->{"message"}->{"reply_to_message"})) {
   exit();
 }
-
-send_text(get_insults(), true);
 ?>
