@@ -3,16 +3,17 @@ word - Get a random word
 words - Get n random words
 kys - Kill yourself
 coin - Tosses a coin
-wiki - search Wikipedia
-arch_wiki - search the Arch wiki
+wiki - Search Wikipedia
+arch_wiki - Search the Arch wiki
+insult - As expected, insults
 is - Is <your question>
 are - Are <your question>
 can - Can <your question>
 will - will <your question>
 shall - shall <your question>
-was - was <your question>
-do - do <your question>
-does - does <your question>
-did - did <your question>
-should - should <your question>
+was - Was <your question>
+do - Do <your question>
+does - Does <your question>
+did - Did <your question>
+should - Should <your question>
 help - Need help? Go here
