@@ -120,18 +120,6 @@ function send_gif($gif_url, $reply=false) {
   return $result;
 }
 
-// Returns Insults
-function get_insults($username) {
-  global $decoded;
-  if ($decoded->{"message"}->{"from"}->{"id"} == 394312580){
-    return "Sorry master, I am unable to do that.";
-  }
-  else {
-    $insults = file('insults.txt');
-    return $insults[rand(0,count($insults)-1)];
-  }
-}
-
 // Generates random words
 function rand_words($onewordmode) {
   global $command_list;
@@ -156,19 +144,17 @@ function rand_words($onewordmode) {
     send_text(implode(' ', $words));
   }
   else {
-    send_text(get_insults());
+    send_text("Ever heard of numbers?", true);
   }
 }
 
-function rand_question()
-{
+function rand_question() {
   $questions = file('rand_questions.txt');
   $question = $questions[rand(0,count($questions))];
   send_text($question);
 }
 
-function media_wiki($base_url)
-{
+function media_wiki($base_url) {
   global $command_list;
   $search_query = "";
   for ($i=1; $i < count($command_list); $i++) {
@@ -196,8 +182,7 @@ function media_wiki($base_url)
   send_html($text);
 }
 
-function coin()
-{
+function coin() {
    $random = rand(0,1);
    if ($random == 1) {
       send_text('Heads', true);
@@ -221,8 +206,7 @@ function get_gif($force) {
   return $image_url;
 }
 
-function yes_or_no()
-{
+function yes_or_no() {
   global $command_list;
   if (!isset($command_list[1])){
     send_text('You know, you also have to ask the question.', true);
@@ -281,9 +265,47 @@ function kys() {
     }
   }
   else {
-    send_text("Do you want to kill yourself?\n\nIf no, reply to someone with /kys to kill them.", true);
+    send_text("Do you want to kill yourself?\n\nIf no, reply to someone with /kys to kill them or run /kys username/name.", true);
   }
 }
+
+// Insult
+function send_insult() {
+  global $decoded;
+  global $bot_name;
+  global $command_list;
+  $insults = file('insults.txt');
+  $random_insult = $insults[rand(0,count($insults)-1)];
+  if ($decoded->{'message'}->{'reply_to_message'}->{'from'}->{'username'} == $bot_name){
+    send_text("Watch who you talk to.", true);
+    return;
+  }
+  if (isset($decoded->{'message'}->{'reply_to_message'})) {
+    if (isset($decoded->{'message'}->{'reply_to_message'}->{'from'}->{'username'})){
+      $username = '@' . $decoded->{'message'}->{'reply_to_message'}->{'from'}->{'username'};
+      $random_insult = preg_replace('/##name##/', $username, $random_insult);
+    }
+    else {
+      $first_name = $decoded->{'message'}->{'reply_to_message'}->{'from'}->{'first_name'};
+      $random_insult = preg_replace('/##name##/', $first_name, $random_insult);
+    }
+    send_text($random_insult);
+  }
+  elseif (isset($command_list[1])){
+    $username = $command_list[1];
+    if ($username == "@quadnite_bot" || $username == "Quadnite" || $username == "quadnite"){
+      send_text("Watch who you talk to.", true);
+    }
+    else {
+      $random_insult = preg_replace('/##name##/', $username, $random_insult);
+      send_text($random_insult);
+    }
+  }
+  else {
+    send_text("Do you want to insult yourself?\n\nIf no, reply to someone with /insult to insult them or run /insult username/name.", true);
+  }
+}
+
 
 // Sends back JSON
 function json() {
@@ -293,7 +315,7 @@ function json() {
 }
 // Start Message
 function start() {
-  send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun. Do not promote me to an admin or I WILL hate you.');
+  send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun.');
 }
 
 function help() {
@@ -387,6 +409,10 @@ $modules = array(
   array(
     "command" => "/help",
     "function" => "help();"
+  ),
+  array(
+    "command" => "/insult",
+    "function" => "send_insult();"
   )
 );
 
@@ -405,10 +431,5 @@ foreach ($modules as $module ) {
     eval($module["function"]);
     exit();
   }
-}
-
-// If message is a reply, exit
-if (isset($decoded->{"message"}->{"reply_to_message"})) {
-  exit();
 }
 ?>
