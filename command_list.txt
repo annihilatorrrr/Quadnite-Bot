@@ -17,3 +17,4 @@ does - Does <your question>
 did - Did <your question>
 should - Should <your question>
 help - Need help? Go here
+feedback - Send feedback, suggestion for kys, insult text

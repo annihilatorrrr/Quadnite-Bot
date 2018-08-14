@@ -120,6 +120,24 @@ function send_gif($gif_url, $reply=false) {
   return $result;
 }
 
+function forward_message($to_chat_id) {
+  global $decoded;
+  global $bot_api;
+  global $chat_id;
+  $message_id = $decoded->{"message"}->{"message_id"};
+  $url = 'https://api.telegram.org/bot' . $bot_api . '/forwardMessage';
+  $post_msg = array('chat_id' => $to_chat_id, 'message_id' => $message_id, 'from_chat_id' => $chat_id);
+  $options = array(
+    'http' => array(
+      'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+      'method' => 'POST',
+      'content' => http_build_query($post_msg)
+    )
+  );
+  $context = stream_context_create($options);
+  $result = file_get_contents($url, false, $context);
+}
+
 // Generates random words
 function rand_words($onewordmode) {
   global $command_list;
@@ -215,11 +233,11 @@ function yes_or_no() {
   $yes_replies = array("Yes", "Yep", "Yeah", "Yus", "Ja", "Ya", "Aye", "Ay", "Oui");
   $no_replies = array("No", "Nopes", "Nu", "Nah", "Nein", "Naw", "Nay", "Yesn't");
   $random = rand(0,1);
-  $random2 = rand(0, 50);
+  $random2 = rand(0, 10);
   if ($random == 1) {
     $yes = $yes_replies[array_rand($yes_replies)];
     send_text($yes, true);
-    if ($random2 == 33){
+    if ($random2 == 5){
       send_gif(get_gif(True));
     }
   }
@@ -265,7 +283,7 @@ function kys() {
     }
   }
   else {
-    send_text("Do you want to kill yourself?\n\nIf no, reply to someone with /kys to kill them or run /kys username/name.", true);
+    send_text("Do you want to kill yourself?\nIf no, reply to someone with /kys to kill them or run /kys username/name.\nYou can suggest more /kys replies using /feedback", true);
   }
 }
 
@@ -302,10 +320,20 @@ function send_insult() {
     }
   }
   else {
-    send_text("Do you want to insult yourself?\n\nIf no, reply to someone with /insult to insult them or run /insult username/name.", true);
+    send_text("Do you want to insult yourself?\nIf no, reply to someone with /insult to insult them or run /insult username/name.\nYou can suggest more /kys replies using /feedback", true);
   }
 }
 
+function feedback(){
+  global $command_list;
+  if (isset($command_list[1])){
+    forward_message(-1001168939936);
+    send_text("Thank you for the feedback");
+  }
+  else {
+    send_text("To send feedback type in /feedback followed by the feedback", true);
+  }
+}
 
 // Sends back JSON
 function json() {
@@ -315,7 +343,7 @@ function json() {
 }
 // Start Message
 function start() {
-  send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun.');
+  send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun. To give feedback, use /feedback');
 }
 
 function help() {
@@ -413,6 +441,10 @@ $modules = array(
   array(
     "command" => "/insult",
     "function" => "send_insult();"
+  ),
+  array(
+    "command" => "/feedback",
+    "function" => "feedback();"
   )
 );
 
