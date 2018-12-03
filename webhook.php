@@ -346,6 +346,10 @@ function start() {
   send_text('Hi, I am Quadnite. If you are chatting with me in private, you are most likely doing it wrong. Add me to a group for fun. To give feedback, use /feedback');
 }
 
+function rate() {
+	send_html('<a href="https://t.me/tgdrbot?start=questable_bot">Vote for me on Telegram Directory!</a>');
+}
+
 function help() {
   send_html('<a href="https://t.me/quadnite/9">Help Page</a>');
 }
@@ -445,6 +449,10 @@ $modules = array(
   array(
     "command" => "/feedback",
     "function" => "feedback();"
+  ),
+  array(
+    "command" => "/rate",
+    "function" => "rate();"
   )
 );
 
