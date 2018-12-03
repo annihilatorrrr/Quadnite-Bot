@@ -347,7 +347,7 @@ function start() {
 }
 
 function rate() {
-	send_html('<a href="https://t.me/tgdrbot?start=questable_bot">Vote for me on Telegram Directory!</a>');
+	send_html('<a href="https://t.me/tgdrbot?start=quadnite_bot">Vote for me on Telegram Directory!</a>');
 }
 
 function help() {
