@@ -155,6 +155,10 @@ function rand_words($onewordmode) {
   $num++;
   $words = array();
   if (is_integer($num)) {
+	if ($num > 50) {
+	  send_text("Too many words.", true);
+	  return;
+	}
     $wordlist = file("/usr/share/dict/words");
     for ($word=1; $word < $num; $word++) {
       $words[] = $wordlist[rand(0,count($wordlist))];
