@@ -359,6 +359,10 @@ function help() {
   send_html('<a href="https://t.me/quadnite/9">Help Page</a>');
 }
 
+function commands() {
+  send_text(file_get_contents('command_list.txt'));
+}
+
 // Get JSON from post, store it and decode it.
 $var = file_get_contents('php://input');
 $decoded = json_decode($var);
@@ -458,6 +462,10 @@ $modules = array(
   array(
     "command" => "/rate",
     "function" => "rate();"
+  ),
+  array(
+    "command" => "/commands",
+    "function" => "commands()"
   )
 );
 
