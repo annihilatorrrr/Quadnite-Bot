@@ -1,4 +1,5 @@
 <?php
+# vim: set tabstop=2 shiftwidth=2 expandtab:
 $bot_name = "quadnite_bot";
 $bot_api = require('api_key.php');
 
@@ -155,10 +156,10 @@ function rand_words($onewordmode) {
   $num++;
   $words = array();
   if (is_integer($num)) {
-	if ($num > 50) {
-	  send_text("Too many words.", true);
-	  return;
-	}
+    if ($num > 50) {
+      send_text("Too many words.", true);
+      return;
+    }
     $wordlist = file("/usr/share/dict/words");
     for ($word=1; $word < $num; $word++) {
       $words[] = $wordlist[rand(0,count($wordlist))];
@@ -205,13 +206,13 @@ function media_wiki($base_url) {
 }
 
 function coin() {
-   $random = rand(0,1);
-   if ($random == 1) {
-      send_text('Heads', true);
-   }
-   else {
-      send_text('Tails', true);
-   }
+  $random = rand(0,1);
+  if ($random == 1) {
+    send_text('Heads', true);
+  }
+  else {
+    send_text('Tails', true);
+  }
 }
 
 function get_gif($force) {
@@ -351,7 +352,7 @@ function start() {
 }
 
 function rate() {
-	send_html('<a href="https://t.me/tgdrbot?start=quadnite_bot">Vote for me on Telegram Directory!</a>');
+  send_html('<a href="https://t.me/tgdrbot?start=quadnite_bot">Vote for me on Telegram Directory!</a>');
 }
 
 function help() {
@@ -461,11 +462,11 @@ $modules = array(
 );
 
 if (!isset($decoded->{"message"}->{"text"})){
-   exit();
+  exit();
 }
 
 if (isset($decoded->{"message"}->{"pinned_message"})){
-   exit();
+  exit();
 }
 
 $command_list = explode(" ", $decoded->{"message"}->{"text"});
