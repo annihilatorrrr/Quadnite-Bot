@@ -465,7 +465,7 @@ $modules = array(
   ),
   array(
     "command" => "/commands",
-    "function" => "commands()"
+    "function" => "commands();"
   )
 );
 
