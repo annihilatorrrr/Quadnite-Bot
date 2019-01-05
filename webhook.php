@@ -356,7 +356,7 @@ function rate() {
 }
 
 function help() {
-  send_html('<a href="https://t.me/quadnite/9">Help Page</a>');
+  send_html('You can either check /commands for a short overview or check the <a href="https://t.me/quadnite/9">Help Page</a>.');
 }
 
 function commands() {
