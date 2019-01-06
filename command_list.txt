@@ -6,6 +6,7 @@ coin - Tosses a coin
 wiki - Search Wikipedia
 arch_wiki - Search the Arch wiki
 insult - As expected, insults
+weebify - Weebifies the given text
 is - Is <your question>
 are - Are <your question>
 can - Can <your question>
