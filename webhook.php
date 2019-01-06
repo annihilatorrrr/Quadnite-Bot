@@ -367,7 +367,7 @@ function weebify() {
   global $decoded;
   global $command_list;
   if(count($command_list) <= 1){
-    send_text("Need text to weebify. Send /weebify text");
+    send_text("Need text to weebify. Send /weebify text", true);
     return;
   }
   $letters = array(
@@ -398,7 +398,7 @@ function weebify() {
     "y" => "丫",
     "z" => "乙"
   );
-  $chars = str_split(preg_replace('/^\/[^ ]+ /', '', $decoded->{"message"}->{"text"}));
+  $chars = str_split(preg_replace('/^\/[^ ]+ /', '', strtolower($decoded->{"message"}->{"text"})));
   $text = "";
   foreach($chars as $char){
     if(key_exists($char, $letters)) {
@@ -408,7 +408,7 @@ function weebify() {
       $text .= $char;
     }
   }
-  send_text($text);
+  send_text($text, true);
 }
 
 // Get JSON from post, store it and decode it.
