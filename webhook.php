@@ -514,6 +514,10 @@ $modules = array(
   array(
     "command" => "/commands",
     "function" => "commands();"
+  ),
+  array(
+    "command" => "/weebify",
+    "function" => "weebify();"
   )
 );
 
