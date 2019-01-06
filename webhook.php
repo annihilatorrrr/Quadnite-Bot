@@ -398,7 +398,7 @@ function weebify() {
     "y" => "丫",
     "z" => "乙"
   );
-  $chars = str_split($decoded->{"message"}->{"text"});
+  $chars = str_split(preg_replace('/^\/[^ ]+ /', '', $decoded->{"message"}->{"text"}));
   $text = "";
   foreach($chars as $char){
     if(key_exists($char, $letters)) {
