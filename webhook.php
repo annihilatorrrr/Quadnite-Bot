@@ -411,6 +411,26 @@ function weebify() {
   send_text($text, true);
 }
 
+function absurdify() {
+  global $decoded;
+  global $command_list;
+  if(count($command_list) <= 1){
+    send_text("Need text to weebify. Send /weebify text", true);
+    return;
+  }
+  $chars = str_split(preg_replace('/^\/[^ ]+ /', '', strtolower($decoded->{"message"}->{"text"})));
+  $text = "";
+  foreach($chars as $char){
+    if (rand(0,1) == 0){
+      $text .= strtolower($char);
+    }
+    else {
+      $text .= strtoupper($char);
+    }
+  }
+  send_text($text, true);
+}
+
 // Get JSON from post, store it and decode it.
 $var = file_get_contents('php://input');
 $decoded = json_decode($var);
@@ -518,6 +538,10 @@ $modules = array(
   array(
     "command" => "/weebify",
     "function" => "weebify();"
+  ),
+  array(
+    "command" => "/absurdify",
+    "function" => "absurdify();"
   )
 );
 
