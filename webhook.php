@@ -415,7 +415,7 @@ function absurdify() {
   global $decoded;
   global $command_list;
   if(count($command_list) <= 1){
-    send_text("Need text to weebify. Send /weebify text", true);
+    send_text("Need text to absurdify. Send /absurdify text", true);
     return;
   }
   $chars = str_split(preg_replace('/^\/[^ ]+ /', '', strtolower($decoded->{"message"}->{"text"})));
