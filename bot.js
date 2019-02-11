@@ -19,3 +19,4 @@ Promise.all(data)
 	.then(data =>
 		commands(bot, data));
 
+bot.launch();
