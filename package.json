@@ -1,0 +1,27 @@
+{
+  "name": "quadnite-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot that makes chats in group more fun.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ceda_ei/Quadnite-Bot.git"
+  },
+  "keywords": [
+    "bot",
+    "telegram",
+    "telegram-bot"
+  ],
+  "author": "Ceda EI",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://gitlab.com/ceda_ei/Quadnite-Bot/issues"
+  },
+  "homepage": "https://gitlab.com/ceda_ei/Quadnite-Bot#readme",
+  "dependencies": {
+    "telegraf": "^3.27.1"
+  }
+}
