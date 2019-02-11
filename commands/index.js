@@ -37,5 +37,11 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words ]) => {
 	bot.command("did", (ctx) => ctx.reply(is(random)(ctx)));
 	bot.command("should", (ctx) => ctx.reply(is(random)(ctx)));
 	bot.command("coin", (ctx) => ctx.reply(random(["Heads", "Tails"])()));
+	bot.command("help", (ctx) => ctx.reply("You can either check /commands "
+		+ "for a short overview or check the [Help Page]"
+		+ "(https://t.me/quadnite/9).", {parse_mode: "Markdown"}));
+	bot.command("rate", (ctx) => ctx.reply("[Vote for me on Telegram "
+		+ "Directory!](https://t.me/tgdrbot?start=quadnite_bot)", {parse_mode:
+			"Markdown"}));
 
 };
