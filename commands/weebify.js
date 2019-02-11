@@ -47,7 +47,8 @@ module.exports = () => (ctx) => {
 		if (ctx.message.reply_to_message)
 			return weebify(ctx.message.reply_to_message.text);
 		else
-			return "Need text to weebify. Send /weebify text or reply to a message with /weebify";
+			return "Need text to weebify. Send /weebify text or reply to a "
+			+ "message with /weebify";
 
 	}
 
