@@ -1,13 +1,15 @@
 const random = require("./random");
 const insults_fun = require("./insult");
+const words_fun = require("./words");
 const is = require("./is");
-module.exports = (bot, [ questions, kys, insults, commands_list ]) => {
+module.exports = (bot, [ questions, kys, insults, commands_list, words ]) => {
 
 	bot.command("question", (ctx) => ctx.reply(random(questions)()));
+	bot.command("word", (ctx) => ctx.reply(random(words)()));
+	bot.command("words", (ctx) => ctx.reply(words_fun(random, words)(ctx)));
 	bot.telegram.getMe()
 		.then(bot_user => {
 
-			console.log(bot_user);
 			const default_text = (command, text) => `Do you want to ${text} `
 				+ `yourself?\nIf no, reply to someone with /${command} to kill`
 				+ ` them or run /${command} username/name.\nYou can suggest `

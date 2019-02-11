@@ -9,7 +9,8 @@ const data = [
 	"questions",
 	"kys",
 	"insults",
-	"commands_list"
+	"commands_list",
+	"words"
 ].map(file =>
 	fs.readFile(file + ".txt", "utf-8")
 		.then(list =>
