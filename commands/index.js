@@ -2,6 +2,7 @@ const random = require("./random");
 const insults_fun = require("./insult");
 const words_fun = require("./words");
 const is = require("./is");
+const weebify = require("./weebify");
 module.exports = (bot, [ questions, kys, insults, commands_list, words ]) => {
 
 	bot.command("question", (ctx) => ctx.reply(random(questions)()));
@@ -43,5 +44,6 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words ]) => {
 	bot.command("rate", (ctx) => ctx.reply("[Vote for me on Telegram "
 		+ "Directory!](https://t.me/tgdrbot?start=quadnite_bot)", {parse_mode:
 			"Markdown"}));
+	bot.command("weebify", (ctx) => ctx.reply(weebify()(ctx)));
 
 };
