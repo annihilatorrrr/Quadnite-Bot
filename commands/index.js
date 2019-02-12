@@ -6,6 +6,7 @@ const weebify = require("./weebify");
 const absurdify = require("./absurdify");
 const feedback = require("./feedback");
 const media_wiki = require("./media_wiki");
+const info = require("./info");
 
 module.exports = (bot, [ questions, kys, insults, commands_list, words ],
 	feedback_id, axios) => {
@@ -58,5 +59,6 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words ],
 	bot.command("arch_wiki", (ctx) => media_wiki(axios,
 		"https://wiki.archlinux.org/api.php")(ctx).then(x => ctx.reply(x,
 		{parse_mode: "HTML"})));
+	bot.command("info", (ctx) => ctx.reply(info()(ctx), {parse_mode: "Markdown"}));
 
 };
