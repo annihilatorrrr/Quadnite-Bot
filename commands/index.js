@@ -4,7 +4,10 @@ const words_fun = require("./words");
 const is = require("./is");
 const weebify = require("./weebify");
 const absurdify = require("./absurdify");
-module.exports = (bot, [ questions, kys, insults, commands_list, words ]) => {
+const feedback = require("./feedback");
+
+module.exports = (bot, [ questions, kys, insults, commands_list, words ],
+	feedback_id) => {
 
 	bot.command("question", (ctx) => ctx.reply(random(questions)()));
 	bot.command("word", (ctx) => ctx.reply(random(words)()));
@@ -47,5 +50,6 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words ]) => {
 			"Markdown"}));
 	bot.command("weebify", (ctx) => ctx.reply(weebify()(ctx)));
 	bot.command("absurdify", (ctx) => ctx.reply(absurdify()(ctx)));
+	bot.command("feedback", (ctx) => ctx.reply(feedback(feedback_id)(ctx)));
 
 };
