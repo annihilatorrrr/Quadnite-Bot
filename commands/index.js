@@ -5,9 +5,10 @@ const is = require("./is");
 const weebify = require("./weebify");
 const absurdify = require("./absurdify");
 const feedback = require("./feedback");
+const media_wiki = require("./media_wiki");
 
 module.exports = (bot, [ questions, kys, insults, commands_list, words ],
-	feedback_id) => {
+	feedback_id, axios) => {
 
 	bot.command("question", (ctx) => ctx.reply(random(questions)()));
 	bot.command("word", (ctx) => ctx.reply(random(words)()));
@@ -51,5 +52,11 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words ],
 	bot.command("weebify", (ctx) => ctx.reply(weebify()(ctx)));
 	bot.command("absurdify", (ctx) => ctx.reply(absurdify()(ctx)));
 	bot.command("feedback", (ctx) => ctx.reply(feedback(feedback_id)(ctx)));
+	bot.command("wiki", (ctx) => media_wiki(axios,
+		"https://en.wikipedia.org/w/api.php")(ctx).then(x => ctx.reply(x,
+		{parse_mode: "HTML"})));
+	bot.command("arch_wiki", (ctx) => media_wiki(axios,
+		"https://wiki.archlinux.org/api.php")(ctx).then(x => ctx.reply(x,
+		{parse_mode: "HTML"})));
 
 };
