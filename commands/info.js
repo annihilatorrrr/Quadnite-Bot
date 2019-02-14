@@ -24,7 +24,7 @@ module.exports = () => (ctx) => {
 				text += "Channel ID: ";
 			text += `\`${forward.id}\`\n`;
 			text += "Message Date: `";
-			const date = new Date(reply.forward_date);
+			const date = new Date(reply.forward_date*1000);
 			text += date.toUTCString();
 			text += "`";
 
