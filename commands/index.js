@@ -60,5 +60,8 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words ],
 		"https://wiki.archlinux.org/api.php")(ctx).then(x => ctx.reply(x,
 		{parse_mode: "HTML"})));
 	bot.command("info", (ctx) => ctx.reply(info()(ctx), {parse_mode: "Markdown"}));
+	bot.command("start", (ctx) => ctx.reply("Hi, I am Quadnite. If you are "
+		+ "chatting with me in private, you are most likely doing it wrong. "
+		+ "Add me to a group for fun. To give feedback, use /feedback"));
 
 };
