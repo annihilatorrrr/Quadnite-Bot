@@ -1,4 +1,3 @@
-name?
 How old are you?
 Whats your Birthday?
 What starsign does that make it?
@@ -1755,4 +1754,3 @@ How do you memorize your numbers?
 Have you ever been stuck in a bad situation but had no phone?
 How many signal bars do you usually get in your room?
 What service provider do you think is the best and why so?
-
