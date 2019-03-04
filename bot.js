@@ -5,6 +5,7 @@ const commands = require("./commands");
 const axios = require("axios");
 
 const bot = new Telegraf(BOT_API_KEY);
+bot.catch((err) => console.log(err));
 
 const data = [
 	"questions",
