@@ -3,7 +3,7 @@ module.exports = (random, kys, default_text, bot_text, excluded_names) => (ctx) 
 	if (ctx.message.reply_to_message) {
 
 		const { from } = ctx.message.reply_to_message;
-		const name = from.username ? "@" + from.username : from.firstName;
+		const name = from.username ? "@" + from.username : from.first_name;
 		if (name == excluded_names[0])
 			return bot_text;
 		return random(kys)().replace(/##name##/g, name);
