@@ -4,6 +4,8 @@ function expand(words, text) {
 	return letters.map((letter) => {
 
 		const wordsWithLetter = words.filter(i => i.match(RegExp(`^${letter}`, "i")));
+		if (! wordsWithLetter.length)
+			return letter;
 		const word = wordsWithLetter[Math.floor(Math.random() * wordsWithLetter.length)];
 		return word;
 
@@ -14,6 +16,7 @@ function expand(words, text) {
 
 module.exports = (words = []) => (ctx) => {
 
+	words = words.filter(i => ! i.match(/'s$/));
 	const message = ctx.message.text.replace(/^[^ ]+/, "");
 	if (message) {
 
