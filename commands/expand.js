@@ -1,15 +1,28 @@
 function expand(words, text) {
 
 	const letters = text.trim().toLowerCase().split("");
+	// Build a dictionary with lowercase letters as keys
+	const dict = {};
+	words.forEach(word => {
+
+		if (word == "")
+			return;
+		const initial = word.split("")[0].toLowerCase();
+		if (initial in dict)
+			dict[initial].push(word);
+		else
+			dict[initial] = [word];
+
+	});
 	return letters.map((letter) => {
 
-		const wordsWithLetter = words.filter(i => i.match(RegExp(`^${letter}`, "i")));
-		if (! wordsWithLetter.length)
+		if (!(letter.toLowerCase() in dict))
 			return letter;
+		const wordsWithLetter = dict[letter.toLowerCase()];
 		const word = wordsWithLetter[Math.floor(Math.random() * wordsWithLetter.length)];
 		return word;
 
-	}).reduce((acc, cur) => acc + " " + cur);
+	}).reduce((acc, cur) => acc + " " + cur).replace(/\s{2,}/, " ");
 
 }
 
