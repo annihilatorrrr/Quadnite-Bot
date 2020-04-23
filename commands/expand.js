@@ -22,7 +22,7 @@ function expand(words, text) {
 		const word = wordsWithLetter[Math.floor(Math.random() * wordsWithLetter.length)];
 		return word;
 
-	}).reduce((acc, cur) => acc + " " + cur).replace(/\s{2,}/, " ");
+	}).reduce((acc, cur) => acc + " " + cur).replace(/\s{2,}/g, " ");
 
 }
 
