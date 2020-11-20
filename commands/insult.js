@@ -10,10 +10,10 @@ module.exports = (random, kys, default_text, bot_text, excluded_names) => (ctx) 
 
 	} else {
 
-		const text_array = ctx.message.text.split(" ").trim();
+		const text_array = ctx.message.text.split(" ");
 		if (text_array.length > 1) {
 
-			const name = text_array.slice(1).reduce((i, j) => i + " " + j);
+			const name = text_array.slice(1).reduce((i, j) => i + " " + j).trim();
 			if (excluded_names.includes(name)
 				|| excluded_names.includes("@" + name))
 				return bot_text;
