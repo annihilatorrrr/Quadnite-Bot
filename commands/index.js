@@ -8,8 +8,9 @@ const feedback = require("./feedback");
 const media_wiki = require("./media_wiki");
 const info = require("./info");
 const expand = require("./expand");
+const roleplay = require("./roleplay");
 
-module.exports = (bot, [ questions, kys, insults, commands_list, words ], feedback_id, axios) => {
+module.exports = (bot, [ questions, kys, insults, commands_list, words, roleplay_data ], feedback_id, axios) => {
 
 	bot.command("question", (ctx) => ctx.reply(random(questions)()));
 	bot.command("word", (ctx) => ctx.reply(random(words)()));
@@ -64,5 +65,9 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words ], feedba
 	bot.command("start", (ctx) => ctx.reply("Hi, I am Quadnite. If you are "
 		+ "chatting with me in private, you are most likely doing it wrong. "
 		+ "Add me to a group for fun. To give feedback, use /feedback"));
+
+	// Add all roleplay commands
+	Object.keys(roleplay_data).map(command =>
+		bot.command(command, ctx => roleplay(roleplay_data[command].forms, roleplay_data[command].gifs)(ctx)));
 
 };
