@@ -33,7 +33,7 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words, roleplay
 
 		});
 
-	bot.command("commands", (ctx) => ctx.reply(commands_list.join("\n")));
+	bot.command("commands", (ctx) => ctx.reply(commands_list.join("\n"), {parse_mode: "html"}));
 	bot.command("is", (ctx) => ctx.reply(is(random)(ctx)));
 	bot.command("are", (ctx) => ctx.reply(is(random)(ctx)));
 	bot.command("can", (ctx) => ctx.reply(is(random)(ctx)));

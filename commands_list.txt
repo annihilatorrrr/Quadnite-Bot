@@ -1,24 +1,61 @@
-question - Get a random question
-word - Get a random word
-words - Get n random words
-kys - Kill yourself
+<b>Random</b>
+
 coin - Tosses a coin
 wiki - Search Wikipedia
 arch_wiki - Search the Arch wiki
+kys - Kill yourself
 insult - As expected, insults
+
+<b>Wordplay</b>
+
+question - Get a random question
+word - Get a random word
+words - Get n random words
 weebify - Weebifies the given text
 absurdify - mAke tExT aBSUrd
-is - Is <your question>
-are - Are <your question>
-can - Can <your question>
-will - will <your question>
-shall - shall <your question>
-was - Was <your question>
-do - Do <your question>
-does - Does <your question>
-did - Did <your question>
-should - Should <your question>
+expand - Expands a given abbreviation
+
+<b>Ask a question</b>
+<code>
+is       are   can
+will     did   shall
+was      do    does
+should
+</code>
+<b>Roleplay</b>
+<code>
+angry       bite
+blush       bored
+bonk        boop
+chase       cheer
+cringe      cry
+cuddle      dab
+dance       die
+eat         facepalm
+feed        glomp
+happy       hate
+holdhands   hide
+highfive    hug
+kill        kiss
+laugh       lick
+love        lurk
+nervous     no
+nom         nuzzle
+panic       pat
+peck        poke
+pout        run
+shoot       shrug
+sip         slap
+sleep       snuggle
+stab        tease
+think       thumbsup
+tickle      triggered
+twerk       wag
+wave        wink
+yes
+</code>
+<b>Miscallenous</b>
+
 help - Need help? Go here
 feedback - Send feedback, suggestion for kys, insult text
 rate - Rate me on TGDR
-expand - Expands a given abbreviation
