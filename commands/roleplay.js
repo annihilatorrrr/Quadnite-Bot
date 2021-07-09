@@ -14,6 +14,10 @@ module.exports = (forms, gifs) => (ctx) => {
 	const message = ctx.message.text.replace(/^[^ ]+\s*/, "")
 		.match(/^((@\w+(\s+|$))*)(.*)/);
 	const users = message[1].trim().split(" ").filter(i => i.length);
+	const rtm = ctx.message.reply_to_message;
+	if (rtm)
+		users.push(rtm.from.username ? "@" + rtm.from.username
+			: rtm.from.first_name);
 	const reason = message[4];
 	let reply = "";
 	const from = ctx.message.from;
