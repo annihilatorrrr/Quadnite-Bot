@@ -98,7 +98,7 @@
 			"none": "{} is bonking",
 			"others": "{} is bonking {}",
 			"reason": "{} is bonking because {}",
-			"both": "{} is bonking at {} for {}"
+			"both": "{} is bonking {} for {}"
 		}
 	},
 	"boop": {
