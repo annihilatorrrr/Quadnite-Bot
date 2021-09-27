@@ -1,5 +1,5 @@
 const Telegraf = require("telegraf");
-const { BOT_API_KEY, FEEDBACK_ID } = process.env;
+const { BOT_API_KEY, FEEDBACK_ID, UGOKI_ROOT } = process.env;
 const fs = require("fs").promises;
 const commands = require("./commands");
 const axios = require("axios");
@@ -21,6 +21,6 @@ const data = [
 
 Promise.all(data)
 	.then(data =>
-		commands(bot, [...data, roleplay], FEEDBACK_ID, axios));
+		commands(bot, [...data, roleplay], FEEDBACK_ID, BOT_API_KEY, UGOKI_ROOT, axios));
 
 bot.launch();

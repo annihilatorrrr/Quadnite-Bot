@@ -9,8 +9,9 @@ const media_wiki = require("./media_wiki");
 const info = require("./info");
 const expand = require("./expand");
 const roleplay = require("./roleplay");
+const suggest = require("./suggest");
 
-module.exports = (bot, [ questions, kys, insults, commands_list, words, roleplay_data ], feedback_id, axios) => {
+module.exports = (bot, [ questions, kys, insults, commands_list, words, roleplay_data ], feedback_id, apiToken, ugokiRoot, axios) => {
 
 	bot.command("question", (ctx) => ctx.reply(random(questions)()));
 	bot.command("word", (ctx) => ctx.reply(random(words)()));
@@ -69,5 +70,7 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words, roleplay
 	// Add all roleplay commands
 	Object.keys(roleplay_data).map(command =>
 		bot.command(command, ctx => roleplay(roleplay_data[command].forms, roleplay_data[command].gifs)(ctx)));
+
+	bot.command("suggest", (ctx) => suggest(axios, apiToken, ugokiRoot)(ctx));
 
 };
