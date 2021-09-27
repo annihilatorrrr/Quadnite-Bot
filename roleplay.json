@@ -1,16 +1,5 @@
 {
 	"angry": {
-		"gifs": [
-			"https://webionite.com/quadnite/angry/0.gif",
-			"https://webionite.com/quadnite/angry/1.gif",
-			"https://webionite.com/quadnite/angry/2.gif",
-			"https://webionite.com/quadnite/angry/3.gif",
-			"https://webionite.com/quadnite/angry/4.gif",
-			"https://webionite.com/quadnite/angry/5.gif",
-			"https://webionite.com/quadnite/angry/6.gif",
-			"https://webionite.com/quadnite/angry/7.gif",
-			"https://webionite.com/quadnite/angry/8.gif"
-		],
 		"forms": {
 			"none": "{} is angry",
 			"others": "{} is angry at {}",
@@ -19,17 +8,6 @@
 		}
 	},
 	"bite": {
-		"gifs": [
-			"https://webionite.com/quadnite/bite/0.gif",
-			"https://webionite.com/quadnite/bite/1.gif",
-			"https://webionite.com/quadnite/bite/2.gif",
-			"https://webionite.com/quadnite/bite/3.gif",
-			"https://webionite.com/quadnite/bite/4.gif",
-			"https://webionite.com/quadnite/bite/5.gif",
-			"https://webionite.com/quadnite/bite/6.gif",
-			"https://webionite.com/quadnite/bite/7.gif",
-			"https://webionite.com/quadnite/bite/8.gif"
-		],
 		"forms": {
 			"none": "{} is biting",
 			"others": "{} is biting {}",
@@ -38,22 +16,6 @@
 		}
 	},
 	"blush": {
-		"gifs": [
-			"https://webionite.com/quadnite/blush/0.gif",
-			"https://webionite.com/quadnite/blush/1.gif",
-			"https://webionite.com/quadnite/blush/2.gif",
-			"https://webionite.com/quadnite/blush/3.gif",
-			"https://webionite.com/quadnite/blush/4.gif",
-			"https://webionite.com/quadnite/blush/5.gif",
-			"https://webionite.com/quadnite/blush/6.gif",
-			"https://webionite.com/quadnite/blush/7.gif",
-			"https://webionite.com/quadnite/blush/8.gif",
-			"https://webionite.com/quadnite/blush/9.gif",
-			"https://webionite.com/quadnite/blush/10.gif",
-			"https://webionite.com/quadnite/blush/11.gif",
-			"https://webionite.com/quadnite/blush/12.gif",
-			"https://webionite.com/quadnite/blush/13.gif"
-		],
 		"forms": {
 			"none": "{} is blushing",
 			"others": "{} is blushing at {}",
@@ -62,13 +24,6 @@
 		}
 	},
 	"bored": {
-		"gifs": [
-			"https://webionite.com/quadnite/bored/0.gif",
-			"https://webionite.com/quadnite/bored/1.gif",
-			"https://webionite.com/quadnite/bored/2.gif",
-			"https://webionite.com/quadnite/bored/3.gif",
-			"https://webionite.com/quadnite/bored/4.gif"
-		],
 		"forms": {
 			"none": "{} is bored",
 			"others": "{}, {} are bored",
@@ -77,23 +32,6 @@
 		}
 	},
 	"bonk": {
-		"gifs": [
-			"https://webionite.com/quadnite/bonk/0.gif",
-			"https://webionite.com/quadnite/bonk/1.gif",
-			"https://webionite.com/quadnite/bonk/2.gif",
-			"https://webionite.com/quadnite/bonk/3.gif",
-			"https://webionite.com/quadnite/bonk/4.gif",
-			"https://webionite.com/quadnite/bonk/5.gif",
-			"https://webionite.com/quadnite/bonk/6.gif",
-			"https://webionite.com/quadnite/bonk/7.gif",
-			"https://webionite.com/quadnite/bonk/8.gif",
-			"https://webionite.com/quadnite/bonk/9.gif",
-			"https://webionite.com/quadnite/bonk/10.gif",
-			"https://webionite.com/quadnite/bonk/11.gif",
-			"https://webionite.com/quadnite/bonk/12.gif",
-			"https://webionite.com/quadnite/bonk/13.gif",
-			"https://webionite.com/quadnite/bonk/14.gif"
-		],
 		"forms": {
 			"none": "{} is bonking",
 			"others": "{} is bonking {}",
@@ -102,15 +40,6 @@
 		}
 	},
 	"boop": {
-		"gifs": [
-			"https://webionite.com/quadnite/boop/0.gif",
-			"https://webionite.com/quadnite/boop/1.gif",
-			"https://webionite.com/quadnite/boop/2.gif",
-			"https://webionite.com/quadnite/boop/3.gif",
-			"https://webionite.com/quadnite/boop/4.gif",
-			"https://webionite.com/quadnite/boop/5.gif",
-			"https://webionite.com/quadnite/boop/6.gif"
-		],
 		"forms": {
 			"none": "{} is booping",
 			"others": "{} is booping {}",
@@ -119,13 +48,6 @@
 		}
 	},
 	"chase": {
-		"gifs": [
-			"https://webionite.com/quadnite/chase/0.gif",
-			"https://webionite.com/quadnite/chase/1.gif",
-			"https://webionite.com/quadnite/chase/2.gif",
-			"https://webionite.com/quadnite/chase/3.gif",
-			"https://webionite.com/quadnite/chase/4.gif"
-		],
 		"forms": {
 			"none": "{} is chasing",
 			"others": "{} is chasing {}",
@@ -134,19 +56,6 @@
 		}
 	},
 	"cheer": {
-		"gifs": [
-			"https://webionite.com/quadnite/cheer/0.gif",
-			"https://webionite.com/quadnite/cheer/1.gif",
-			"https://webionite.com/quadnite/cheer/2.gif",
-			"https://webionite.com/quadnite/cheer/3.gif",
-			"https://webionite.com/quadnite/cheer/4.gif",
-			"https://webionite.com/quadnite/cheer/5.gif",
-			"https://webionite.com/quadnite/cheer/6.gif",
-			"https://webionite.com/quadnite/cheer/7.gif",
-			"https://webionite.com/quadnite/cheer/8.gif",
-			"https://webionite.com/quadnite/cheer/9.gif",
-			"https://webionite.com/quadnite/cheer/10.gif"
-		],
 		"forms": {
 			"none": "{} is cheering",
 			"others": "{} is cheering for {}",
@@ -155,19 +64,6 @@
 		}
 	},
 	"cringe": {
-		"gifs": [
-			"https://webionite.com/quadnite/cringe/0.gif",
-			"https://webionite.com/quadnite/cringe/1.gif",
-			"https://webionite.com/quadnite/cringe/2.gif",
-			"https://webionite.com/quadnite/cringe/3.gif",
-			"https://webionite.com/quadnite/cringe/4.gif",
-			"https://webionite.com/quadnite/cringe/5.gif",
-			"https://webionite.com/quadnite/cringe/6.gif",
-			"https://webionite.com/quadnite/cringe/7.gif",
-			"https://webionite.com/quadnite/cringe/8.gif",
-			"https://webionite.com/quadnite/cringe/9.gif",
-			"https://webionite.com/quadnite/cringe/10.gif"
-		],
 		"forms": {
 			"none": "{} is cringing",
 			"others": "{} is cringing at {}",
@@ -176,23 +72,6 @@
 		}
 	},
 	"cry": {
-		"gifs": [
-			"https://webionite.com/quadnite/cry/0.gif",
-			"https://webionite.com/quadnite/cry/1.gif",
-			"https://webionite.com/quadnite/cry/2.gif",
-			"https://webionite.com/quadnite/cry/3.gif",
-			"https://webionite.com/quadnite/cry/4.gif",
-			"https://webionite.com/quadnite/cry/5.gif",
-			"https://webionite.com/quadnite/cry/6.gif",
-			"https://webionite.com/quadnite/cry/7.gif",
-			"https://webionite.com/quadnite/cry/8.gif",
-			"https://webionite.com/quadnite/cry/9.gif",
-			"https://webionite.com/quadnite/cry/10.gif",
-			"https://webionite.com/quadnite/cry/11.gif",
-			"https://webionite.com/quadnite/cry/12.gif",
-			"https://webionite.com/quadnite/cry/13.gif",
-			"https://webionite.com/quadnite/cry/14.gif"
-		],
 		"forms": {
 			"none": "{} is crying",
 			"others": "{} is crying at {}",
@@ -201,18 +80,6 @@
 		}
 	},
 	"cuddle": {
-		"gifs": [
-			"https://webionite.com/quadnite/cuddle/0.gif",
-			"https://webionite.com/quadnite/cuddle/1.gif",
-			"https://webionite.com/quadnite/cuddle/2.gif",
-			"https://webionite.com/quadnite/cuddle/3.gif",
-			"https://webionite.com/quadnite/cuddle/4.gif",
-			"https://webionite.com/quadnite/cuddle/5.gif",
-			"https://webionite.com/quadnite/cuddle/6.gif",
-			"https://webionite.com/quadnite/cuddle/7.gif",
-			"https://webionite.com/quadnite/cuddle/8.gif",
-			"https://webionite.com/quadnite/cuddle/9.gif"
-		],
 		"forms": {
 			"none": "{} is cuddling",
 			"others": "{} is cuddling with {}",
@@ -221,13 +88,6 @@
 		}
 	},
 	"dab": {
-		"gifs": [
-			"https://webionite.com/quadnite/dab/0.gif",
-			"https://webionite.com/quadnite/dab/1.gif",
-			"https://webionite.com/quadnite/dab/2.gif",
-			"https://webionite.com/quadnite/dab/3.gif",
-			"https://webionite.com/quadnite/dab/4.gif"
-		],
 		"forms": {
 			"none": "{} is dabing",
 			"others": "{} is dabing at {}",
@@ -236,24 +96,6 @@
 		}
 	},
 	"dance": {
-		"gifs": [
-			"https://webionite.com/quadnite/dance/0.gif",
-			"https://webionite.com/quadnite/dance/1.gif",
-			"https://webionite.com/quadnite/dance/2.gif",
-			"https://webionite.com/quadnite/dance/3.gif",
-			"https://webionite.com/quadnite/dance/4.gif",
-			"https://webionite.com/quadnite/dance/5.gif",
-			"https://webionite.com/quadnite/dance/6.gif",
-			"https://webionite.com/quadnite/dance/7.gif",
-			"https://webionite.com/quadnite/dance/8.gif",
-			"https://webionite.com/quadnite/dance/9.gif",
-			"https://webionite.com/quadnite/dance/10.gif",
-			"https://webionite.com/quadnite/dance/11.gif",
-			"https://webionite.com/quadnite/dance/12.gif",
-			"https://webionite.com/quadnite/dance/13.gif",
-			"https://webionite.com/quadnite/dance/14.gif",
-			"https://webionite.com/quadnite/dance/15.gif"
-		],
 		"forms": {
 			"none": "{} is dancing",
 			"others": "{} is dancing with {}",
@@ -262,13 +104,6 @@
 		}
 	},
 	"die": {
-		"gifs": [
-			"https://webionite.com/quadnite/die/0.gif",
-			"https://webionite.com/quadnite/die/1.gif",
-			"https://webionite.com/quadnite/die/2.gif",
-			"https://webionite.com/quadnite/die/3.gif",
-			"https://webionite.com/quadnite/die/4.gif"
-		],
 		"forms": {
 			"none": "{} is dying",
 			"others": "{} is dying with {}",
@@ -277,19 +112,6 @@
 		}
 	},
 	"eat": {
-		"gifs": [
-			"https://webionite.com/quadnite/eat/0.gif",
-			"https://webionite.com/quadnite/eat/1.gif",
-			"https://webionite.com/quadnite/eat/2.gif",
-			"https://webionite.com/quadnite/eat/3.gif",
-			"https://webionite.com/quadnite/eat/4.gif",
-			"https://webionite.com/quadnite/eat/5.gif",
-			"https://webionite.com/quadnite/eat/6.gif",
-			"https://webionite.com/quadnite/eat/7.gif",
-			"https://webionite.com/quadnite/eat/8.gif",
-			"https://webionite.com/quadnite/eat/9.gif",
-			"https://webionite.com/quadnite/eat/10.gif"
-		],
 		"forms": {
 			"none": "{} is eating",
 			"others": "{} is eating with {}",
@@ -298,17 +120,6 @@
 		}
 	},
 	"facepalm": {
-		"gifs": [
-			"https://webionite.com/quadnite/facepalm/0.gif",
-			"https://webionite.com/quadnite/facepalm/1.gif",
-			"https://webionite.com/quadnite/facepalm/2.gif",
-			"https://webionite.com/quadnite/facepalm/3.gif",
-			"https://webionite.com/quadnite/facepalm/4.gif",
-			"https://webionite.com/quadnite/facepalm/5.gif",
-			"https://webionite.com/quadnite/facepalm/6.gif",
-			"https://webionite.com/quadnite/facepalm/7.gif",
-			"https://webionite.com/quadnite/facepalm/8.gif"
-		],
 		"forms": {
 			"none": "{} is facepalming",
 			"others": "{} is facepalming at {}",
@@ -317,19 +128,6 @@
 		}
 	},
 	"feed": {
-		"gifs": [
-			"https://webionite.com/quadnite/feed/0.gif",
-			"https://webionite.com/quadnite/feed/1.gif",
-			"https://webionite.com/quadnite/feed/2.gif",
-			"https://webionite.com/quadnite/feed/3.gif",
-			"https://webionite.com/quadnite/feed/4.gif",
-			"https://webionite.com/quadnite/feed/5.gif",
-			"https://webionite.com/quadnite/feed/6.gif",
-			"https://webionite.com/quadnite/feed/7.gif",
-			"https://webionite.com/quadnite/feed/8.gif",
-			"https://webionite.com/quadnite/feed/9.gif",
-			"https://webionite.com/quadnite/feed/10.gif"
-		],
 		"forms": {
 			"none": "{} is eating",
 			"others": "{} is feeding {}",
@@ -338,22 +136,6 @@
 		}
 	},
 	"glomp": {
-		"gifs": [
-			"https://webionite.com/quadnite/glomp/0.gif",
-			"https://webionite.com/quadnite/glomp/1.gif",
-			"https://webionite.com/quadnite/glomp/2.gif",
-			"https://webionite.com/quadnite/glomp/3.gif",
-			"https://webionite.com/quadnite/glomp/4.gif",
-			"https://webionite.com/quadnite/glomp/5.gif",
-			"https://webionite.com/quadnite/glomp/6.gif",
-			"https://webionite.com/quadnite/glomp/7.gif",
-			"https://webionite.com/quadnite/glomp/8.gif",
-			"https://webionite.com/quadnite/glomp/9.gif",
-			"https://webionite.com/quadnite/glomp/10.gif",
-			"https://webionite.com/quadnite/glomp/11.gif",
-			"https://webionite.com/quadnite/glomp/12.gif",
-			"https://webionite.com/quadnite/glomp/13.gif"
-		],
 		"forms": {
 			"none": "{} is glomping",
 			"others": "{} is glomping {}",
@@ -362,13 +144,6 @@
 		}
 	},
 	"happy": {
-		"gifs": [
-			"https://webionite.com/quadnite/happy/0.gif",
-			"https://webionite.com/quadnite/happy/1.gif",
-			"https://webionite.com/quadnite/happy/2.gif",
-			"https://webionite.com/quadnite/happy/3.gif",
-			"https://webionite.com/quadnite/happy/4.gif"
-		],
 		"forms": {
 			"none": "{} is happy",
 			"others": "{} is happy with {}",
@@ -377,13 +152,6 @@
 		}
 	},
 	"hate": {
-		"gifs": [
-			"https://webionite.com/quadnite/hate/0.gif",
-			"https://webionite.com/quadnite/hate/1.gif",
-			"https://webionite.com/quadnite/hate/2.gif",
-			"https://webionite.com/quadnite/hate/3.gif",
-			"https://webionite.com/quadnite/hate/4.gif"
-		],
 		"forms": {
 			"none": "{} is hating",
 			"others": "{} is hating {}",
@@ -392,18 +160,6 @@
 		}
 	},
 	"holdhands": {
-		"gifs": [
-			"https://webionite.com/quadnite/holdhands/0.gif",
-			"https://webionite.com/quadnite/holdhands/1.gif",
-			"https://webionite.com/quadnite/holdhands/2.gif",
-			"https://webionite.com/quadnite/holdhands/3.gif",
-			"https://webionite.com/quadnite/holdhands/4.gif",
-			"https://webionite.com/quadnite/holdhands/5.gif",
-			"https://webionite.com/quadnite/holdhands/6.gif",
-			"https://webionite.com/quadnite/holdhands/7.gif",
-			"https://webionite.com/quadnite/holdhands/8.gif",
-			"https://webionite.com/quadnite/holdhands/9.gif"
-		],
 		"forms": {
 			"none": "{} is holding hands",
 			"others": "{} is holding hands with {}",
@@ -412,19 +168,6 @@
 		}
 	},
 	"hide": {
-		"gifs": [
-			"https://webionite.com/quadnite/hide/0.gif",
-			"https://webionite.com/quadnite/hide/1.gif",
-			"https://webionite.com/quadnite/hide/2.gif",
-			"https://webionite.com/quadnite/hide/3.gif",
-			"https://webionite.com/quadnite/hide/4.gif",
-			"https://webionite.com/quadnite/hide/5.gif",
-			"https://webionite.com/quadnite/hide/6.gif",
-			"https://webionite.com/quadnite/hide/7.gif",
-			"https://webionite.com/quadnite/hide/8.gif",
-			"https://webionite.com/quadnite/hide/9.gif",
-			"https://webionite.com/quadnite/hide/10.gif"
-		],
 		"forms": {
 			"none": "{} is hiding",
 			"others": "{} is hiding from {}",
@@ -433,18 +176,6 @@
 		}
 	},
 	"highfive": {
-		"gifs": [
-			"https://webionite.com/quadnite/highfive/0.gif",
-			"https://webionite.com/quadnite/highfive/1.gif",
-			"https://webionite.com/quadnite/highfive/2.gif",
-			"https://webionite.com/quadnite/highfive/3.gif",
-			"https://webionite.com/quadnite/highfive/4.gif",
-			"https://webionite.com/quadnite/highfive/5.gif",
-			"https://webionite.com/quadnite/highfive/6.gif",
-			"https://webionite.com/quadnite/highfive/7.gif",
-			"https://webionite.com/quadnite/highfive/8.gif",
-			"https://webionite.com/quadnite/highfive/9.gif"
-		],
 		"forms": {
 			"none": "{} is high fiving",
 			"others": "{} is high fiving with {}",
@@ -453,37 +184,6 @@
 		}
 	},
 	"hug": {
-		"gifs": [
-			"https://webionite.com/quadnite/hug/0.gif",
-			"https://webionite.com/quadnite/hug/1.gif",
-			"https://webionite.com/quadnite/hug/2.gif",
-			"https://webionite.com/quadnite/hug/3.gif",
-			"https://webionite.com/quadnite/hug/4.gif",
-			"https://webionite.com/quadnite/hug/5.gif",
-			"https://webionite.com/quadnite/hug/6.gif",
-			"https://webionite.com/quadnite/hug/7.gif",
-			"https://webionite.com/quadnite/hug/8.gif",
-			"https://webionite.com/quadnite/hug/9.gif",
-			"https://webionite.com/quadnite/hug/10.gif",
-			"https://webionite.com/quadnite/hug/11.gif",
-			"https://webionite.com/quadnite/hug/12.gif",
-			"https://webionite.com/quadnite/hug/13.gif",
-			"https://webionite.com/quadnite/hug/14.gif",
-			"https://webionite.com/quadnite/hug/15.gif",
-			"https://webionite.com/quadnite/hug/16.gif",
-			"https://webionite.com/quadnite/hug/17.gif",
-			"https://webionite.com/quadnite/hug/18.gif",
-			"https://webionite.com/quadnite/hug/19.gif",
-			"https://webionite.com/quadnite/hug/20.gif",
-			"https://webionite.com/quadnite/hug/21.gif",
-			"https://webionite.com/quadnite/hug/22.gif",
-			"https://webionite.com/quadnite/hug/23.gif",
-			"https://webionite.com/quadnite/hug/24.gif",
-			"https://webionite.com/quadnite/hug/25.gif",
-			"https://webionite.com/quadnite/hug/26.gif",
-			"https://webionite.com/quadnite/hug/27.gif",
-			"https://webionite.com/quadnite/hug/28.gif"
-		],
 		"forms": {
 			"none": "{} is hugging",
 			"others": "{} is hugging {}",
@@ -492,17 +192,6 @@
 		}
 	},
 	"kill": {
-		"gifs": [
-			"https://webionite.com/quadnite/kill/0.gif",
-			"https://webionite.com/quadnite/kill/1.gif",
-			"https://webionite.com/quadnite/kill/2.gif",
-			"https://webionite.com/quadnite/kill/3.gif",
-			"https://webionite.com/quadnite/kill/4.gif",
-			"https://webionite.com/quadnite/kill/5.gif",
-			"https://webionite.com/quadnite/kill/6.gif",
-			"https://webionite.com/quadnite/kill/7.gif",
-			"https://webionite.com/quadnite/kill/8.gif"
-		],
 		"forms": {
 			"none": "{} is killing",
 			"others": "{} is killing {}",
@@ -511,24 +200,6 @@
 		}
 	},
 	"kiss": {
-		"gifs": [
-			"https://webionite.com/quadnite/kiss/0.gif",
-			"https://webionite.com/quadnite/kiss/1.gif",
-			"https://webionite.com/quadnite/kiss/2.gif",
-			"https://webionite.com/quadnite/kiss/3.gif",
-			"https://webionite.com/quadnite/kiss/4.gif",
-			"https://webionite.com/quadnite/kiss/5.gif",
-			"https://webionite.com/quadnite/kiss/6.gif",
-			"https://webionite.com/quadnite/kiss/7.gif",
-			"https://webionite.com/quadnite/kiss/8.gif",
-			"https://webionite.com/quadnite/kiss/9.gif",
-			"https://webionite.com/quadnite/kiss/10.gif",
-			"https://webionite.com/quadnite/kiss/11.gif",
-			"https://webionite.com/quadnite/kiss/12.gif",
-			"https://webionite.com/quadnite/kiss/13.gif",
-			"https://webionite.com/quadnite/kiss/14.gif",
-			"https://webionite.com/quadnite/kiss/15.gif"
-		],
 		"forms": {
 			"none": "{} is kissing",
 			"others": "{} is kissing {}",
@@ -537,17 +208,6 @@
 		}
 	},
 	"laugh": {
-		"gifs": [
-			"https://webionite.com/quadnite/laugh/0.gif",
-			"https://webionite.com/quadnite/laugh/1.gif",
-			"https://webionite.com/quadnite/laugh/2.gif",
-			"https://webionite.com/quadnite/laugh/3.gif",
-			"https://webionite.com/quadnite/laugh/4.gif",
-			"https://webionite.com/quadnite/laugh/5.gif",
-			"https://webionite.com/quadnite/laugh/6.gif",
-			"https://webionite.com/quadnite/laugh/7.gif",
-			"https://webionite.com/quadnite/laugh/8.gif"
-		],
 		"forms": {
 			"none": "{} is laughing",
 			"others": "{} is laughing with {}",
@@ -556,19 +216,6 @@
 		}
 	},
 	"lick": {
-		"gifs": [
-			"https://webionite.com/quadnite/lick/0.gif",
-			"https://webionite.com/quadnite/lick/1.gif",
-			"https://webionite.com/quadnite/lick/2.gif",
-			"https://webionite.com/quadnite/lick/3.gif",
-			"https://webionite.com/quadnite/lick/4.gif",
-			"https://webionite.com/quadnite/lick/5.gif",
-			"https://webionite.com/quadnite/lick/6.gif",
-			"https://webionite.com/quadnite/lick/7.gif",
-			"https://webionite.com/quadnite/lick/8.gif",
-			"https://webionite.com/quadnite/lick/9.gif",
-			"https://webionite.com/quadnite/lick/10.gif"
-		],
 		"forms": {
 			"none": "{} is licking",
 			"others": "{} is licking {}",
@@ -577,18 +224,6 @@
 		}
 	},
 	"love": {
-		"gifs": [
-			"https://webionite.com/quadnite/love/0.gif",
-			"https://webionite.com/quadnite/love/1.gif",
-			"https://webionite.com/quadnite/love/2.gif",
-			"https://webionite.com/quadnite/love/3.gif",
-			"https://webionite.com/quadnite/love/4.gif",
-			"https://webionite.com/quadnite/love/5.gif",
-			"https://webionite.com/quadnite/love/6.gif",
-			"https://webionite.com/quadnite/love/7.gif",
-			"https://webionite.com/quadnite/love/8.gif",
-			"https://webionite.com/quadnite/love/9.gif"
-		],
 		"forms": {
 			"none": "{} is loving",
 			"others": "{} is loving {}",
@@ -597,17 +232,6 @@
 		}
 	},
 	"lurk": {
-		"gifs": [
-			"https://webionite.com/quadnite/lurk/0.gif",
-			"https://webionite.com/quadnite/lurk/1.gif",
-			"https://webionite.com/quadnite/lurk/2.gif",
-			"https://webionite.com/quadnite/lurk/3.gif",
-			"https://webionite.com/quadnite/lurk/4.gif",
-			"https://webionite.com/quadnite/lurk/5.gif",
-			"https://webionite.com/quadnite/lurk/6.gif",
-			"https://webionite.com/quadnite/lurk/7.gif",
-			"https://webionite.com/quadnite/lurk/8.gif"
-		],
 		"forms": {
 			"none": "{} is lurking",
 			"others": "{} is lurking from {}",
@@ -616,17 +240,6 @@
 		}
 	},
 	"nervous": {
-		"gifs": [
-			"https://webionite.com/quadnite/nervous/0.gif",
-			"https://webionite.com/quadnite/nervous/1.gif",
-			"https://webionite.com/quadnite/nervous/2.gif",
-			"https://webionite.com/quadnite/nervous/3.gif",
-			"https://webionite.com/quadnite/nervous/4.gif",
-			"https://webionite.com/quadnite/nervous/5.gif",
-			"https://webionite.com/quadnite/nervous/6.gif",
-			"https://webionite.com/quadnite/nervous/7.gif",
-			"https://webionite.com/quadnite/nervous/8.gif"
-		],
 		"forms": {
 			"none": "{} is nervous",
 			"others": "{} is nervous with {}",
@@ -635,22 +248,6 @@
 		}
 	},
 	"no": {
-		"gifs": [
-			"https://webionite.com/quadnite/no/0.gif",
-			"https://webionite.com/quadnite/no/1.gif",
-			"https://webionite.com/quadnite/no/2.gif",
-			"https://webionite.com/quadnite/no/3.gif",
-			"https://webionite.com/quadnite/no/4.gif",
-			"https://webionite.com/quadnite/no/5.gif",
-			"https://webionite.com/quadnite/no/6.gif",
-			"https://webionite.com/quadnite/no/7.gif",
-			"https://webionite.com/quadnite/no/8.gif",
-			"https://webionite.com/quadnite/no/9.gif",
-			"https://webionite.com/quadnite/no/10.gif",
-			"https://webionite.com/quadnite/no/11.gif",
-			"https://webionite.com/quadnite/no/12.gif",
-			"https://webionite.com/quadnite/no/13.gif"
-		],
 		"forms": {
 			"none": "{} is saying no",
 			"others": "{} is saying no to {}",
@@ -659,14 +256,6 @@
 		}
 	},
 	"nom": {
-		"gifs": [
-			"https://webionite.com/quadnite/nom/0.gif",
-			"https://webionite.com/quadnite/nom/1.gif",
-			"https://webionite.com/quadnite/nom/2.gif",
-			"https://webionite.com/quadnite/nom/3.gif",
-			"https://webionite.com/quadnite/nom/4.gif",
-			"https://webionite.com/quadnite/nom/5.gif"
-		],
 		"forms": {
 			"none": "{} is noming",
 			"others": "{} is noming {}",
@@ -675,18 +264,6 @@
 		}
 	},
 	"nuzzle": {
-		"gifs": [
-			"https://webionite.com/quadnite/nuzzle/0.gif",
-			"https://webionite.com/quadnite/nuzzle/1.gif",
-			"https://webionite.com/quadnite/nuzzle/2.gif",
-			"https://webionite.com/quadnite/nuzzle/3.gif",
-			"https://webionite.com/quadnite/nuzzle/4.gif",
-			"https://webionite.com/quadnite/nuzzle/5.gif",
-			"https://webionite.com/quadnite/nuzzle/6.gif",
-			"https://webionite.com/quadnite/nuzzle/7.gif",
-			"https://webionite.com/quadnite/nuzzle/8.gif",
-			"https://webionite.com/quadnite/nuzzle/9.gif"
-		],
 		"forms": {
 			"none": "{} is nuzzling",
 			"others": "{} is nuzzling {}",
@@ -695,17 +272,6 @@
 		}
 	},
 	"panic": {
-		"gifs": [
-			"https://webionite.com/quadnite/panic/0.gif",
-			"https://webionite.com/quadnite/panic/1.gif",
-			"https://webionite.com/quadnite/panic/2.gif",
-			"https://webionite.com/quadnite/panic/3.gif",
-			"https://webionite.com/quadnite/panic/4.gif",
-			"https://webionite.com/quadnite/panic/5.gif",
-			"https://webionite.com/quadnite/panic/6.gif",
-			"https://webionite.com/quadnite/panic/7.gif",
-			"https://webionite.com/quadnite/panic/8.gif"
-		],
 		"forms": {
 			"none": "{} is panicking",
 			"others": "{} is panicking at {}",
@@ -714,15 +280,6 @@
 		}
 	},
 	"pat": {
-		"gifs": [
-			"https://webionite.com/quadnite/pat/0.gif",
-			"https://webionite.com/quadnite/pat/1.gif",
-			"https://webionite.com/quadnite/pat/2.gif",
-			"https://webionite.com/quadnite/pat/3.gif",
-			"https://webionite.com/quadnite/pat/4.gif",
-			"https://webionite.com/quadnite/pat/5.gif",
-			"https://webionite.com/quadnite/pat/6.gif"
-		],
 		"forms": {
 			"none": "{} is patting",
 			"others": "{} is patting {}",
@@ -731,18 +288,6 @@
 		}
 	},
 	"peck": {
-		"gifs": [
-			"https://webionite.com/quadnite/peck/0.gif",
-			"https://webionite.com/quadnite/peck/1.gif",
-			"https://webionite.com/quadnite/peck/2.gif",
-			"https://webionite.com/quadnite/peck/3.gif",
-			"https://webionite.com/quadnite/peck/4.gif",
-			"https://webionite.com/quadnite/peck/5.gif",
-			"https://webionite.com/quadnite/peck/6.gif",
-			"https://webionite.com/quadnite/peck/7.gif",
-			"https://webionite.com/quadnite/peck/8.gif",
-			"https://webionite.com/quadnite/peck/9.gif"
-		],
 		"forms": {
 			"none": "{} is pecking",
 			"others": "{} is pecking {}",
@@ -751,20 +296,6 @@
 		}
 	},
 	"poke": {
-		"gifs": [
-			"https://webionite.com/quadnite/poke/0.gif",
-			"https://webionite.com/quadnite/poke/1.gif",
-			"https://webionite.com/quadnite/poke/2.gif",
-			"https://webionite.com/quadnite/poke/3.gif",
-			"https://webionite.com/quadnite/poke/4.gif",
-			"https://webionite.com/quadnite/poke/5.gif",
-			"https://webionite.com/quadnite/poke/6.gif",
-			"https://webionite.com/quadnite/poke/7.gif",
-			"https://webionite.com/quadnite/poke/8.gif",
-			"https://webionite.com/quadnite/poke/9.gif",
-			"https://webionite.com/quadnite/poke/10.gif",
-			"https://webionite.com/quadnite/poke/11.gif"
-		],
 		"forms": {
 			"none": "{} is poking",
 			"others": "{} is poking {}",
@@ -773,14 +304,6 @@
 		}
 	},
 	"pout": {
-		"gifs": [
-			"https://webionite.com/quadnite/pout/0.gif",
-			"https://webionite.com/quadnite/pout/1.gif",
-			"https://webionite.com/quadnite/pout/2.gif",
-			"https://webionite.com/quadnite/pout/3.gif",
-			"https://webionite.com/quadnite/pout/4.gif",
-			"https://webionite.com/quadnite/pout/5.gif"
-		],
 		"forms": {
 			"none": "{} is pouting",
 			"others": "{} is pouting at {}",
@@ -789,23 +312,6 @@
 		}
 	},
 	"run": {
-		"gifs": [
-			"https://webionite.com/quadnite/run/0.gif",
-			"https://webionite.com/quadnite/run/1.gif",
-			"https://webionite.com/quadnite/run/2.gif",
-			"https://webionite.com/quadnite/run/3.gif",
-			"https://webionite.com/quadnite/run/4.gif",
-			"https://webionite.com/quadnite/run/5.gif",
-			"https://webionite.com/quadnite/run/6.gif",
-			"https://webionite.com/quadnite/run/7.gif",
-			"https://webionite.com/quadnite/run/8.gif",
-			"https://webionite.com/quadnite/run/9.gif",
-			"https://webionite.com/quadnite/run/10.gif",
-			"https://webionite.com/quadnite/run/11.gif",
-			"https://webionite.com/quadnite/run/12.gif",
-			"https://webionite.com/quadnite/run/13.gif",
-			"https://webionite.com/quadnite/run/14.gif"
-		],
 		"forms": {
 			"none": "{} is running",
 			"others": "{} is running from {}",
@@ -814,14 +320,6 @@
 		}
 	},
 	"shoot": {
-		"gifs": [
-			"https://webionite.com/quadnite/shoot/0.gif",
-			"https://webionite.com/quadnite/shoot/1.gif",
-			"https://webionite.com/quadnite/shoot/2.gif",
-			"https://webionite.com/quadnite/shoot/3.gif",
-			"https://webionite.com/quadnite/shoot/4.gif",
-			"https://webionite.com/quadnite/shoot/5.gif"
-		],
 		"forms": {
 			"none": "{} is shooting",
 			"others": "{} is shooting {}",
@@ -830,21 +328,6 @@
 		}
 	},
 	"shrug": {
-		"gifs": [
-			"https://webionite.com/quadnite/shrug/0.gif",
-			"https://webionite.com/quadnite/shrug/1.gif",
-			"https://webionite.com/quadnite/shrug/2.gif",
-			"https://webionite.com/quadnite/shrug/3.gif",
-			"https://webionite.com/quadnite/shrug/4.gif",
-			"https://webionite.com/quadnite/shrug/5.gif",
-			"https://webionite.com/quadnite/shrug/6.gif",
-			"https://webionite.com/quadnite/shrug/7.gif",
-			"https://webionite.com/quadnite/shrug/8.gif",
-			"https://webionite.com/quadnite/shrug/9.gif",
-			"https://webionite.com/quadnite/shrug/10.gif",
-			"https://webionite.com/quadnite/shrug/11.gif",
-			"https://webionite.com/quadnite/shrug/12.gif"
-		],
 		"forms": {
 			"none": "{} is shrugging",
 			"others": "{} is shrugging at {}",
@@ -853,18 +336,6 @@
 		}
 	},
 	"sip": {
-		"gifs": [
-			"https://webionite.com/quadnite/sip/0.gif",
-			"https://webionite.com/quadnite/sip/1.gif",
-			"https://webionite.com/quadnite/sip/2.gif",
-			"https://webionite.com/quadnite/sip/3.gif",
-			"https://webionite.com/quadnite/sip/4.gif",
-			"https://webionite.com/quadnite/sip/5.gif",
-			"https://webionite.com/quadnite/sip/6.gif",
-			"https://webionite.com/quadnite/sip/7.gif",
-			"https://webionite.com/quadnite/sip/8.gif",
-			"https://webionite.com/quadnite/sip/9.gif"
-		],
 		"forms": {
 			"none": "{} is sipping",
 			"others": "{} is sipping with {}",
@@ -873,20 +344,6 @@
 		}
 	},
 	"slap": {
-		"gifs": [
-			"https://webionite.com/quadnite/slap/0.gif",
-			"https://webionite.com/quadnite/slap/1.gif",
-			"https://webionite.com/quadnite/slap/2.gif",
-			"https://webionite.com/quadnite/slap/3.gif",
-			"https://webionite.com/quadnite/slap/4.gif",
-			"https://webionite.com/quadnite/slap/5.gif",
-			"https://webionite.com/quadnite/slap/6.gif",
-			"https://webionite.com/quadnite/slap/7.gif",
-			"https://webionite.com/quadnite/slap/8.gif",
-			"https://webionite.com/quadnite/slap/9.gif",
-			"https://webionite.com/quadnite/slap/10.gif",
-			"https://webionite.com/quadnite/slap/11.gif"
-		],
 		"forms": {
 			"none": "{} is slapping",
 			"others": "{} is slapping {}",
@@ -895,22 +352,6 @@
 		}
 	},
 	"sleep": {
-		"gifs": [
-			"https://webionite.com/quadnite/sleep/0.gif",
-			"https://webionite.com/quadnite/sleep/1.gif",
-			"https://webionite.com/quadnite/sleep/2.gif",
-			"https://webionite.com/quadnite/sleep/3.gif",
-			"https://webionite.com/quadnite/sleep/4.gif",
-			"https://webionite.com/quadnite/sleep/5.gif",
-			"https://webionite.com/quadnite/sleep/6.gif",
-			"https://webionite.com/quadnite/sleep/7.gif",
-			"https://webionite.com/quadnite/sleep/8.gif",
-			"https://webionite.com/quadnite/sleep/9.gif",
-			"https://webionite.com/quadnite/sleep/10.gif",
-			"https://webionite.com/quadnite/sleep/11.gif",
-			"https://webionite.com/quadnite/sleep/12.gif",
-			"https://webionite.com/quadnite/sleep/13.gif"
-		],
 		"forms": {
 			"none": "{} is sleeping",
 			"others": "{} is sleeping with {}",
@@ -919,16 +360,6 @@
 		}
 	},
 	"snuggle": {
-		"gifs": [
-			"https://webionite.com/quadnite/snuggle/0.gif",
-			"https://webionite.com/quadnite/snuggle/1.gif",
-			"https://webionite.com/quadnite/snuggle/2.gif",
-			"https://webionite.com/quadnite/snuggle/3.gif",
-			"https://webionite.com/quadnite/snuggle/4.gif",
-			"https://webionite.com/quadnite/snuggle/5.gif",
-			"https://webionite.com/quadnite/snuggle/6.gif",
-			"https://webionite.com/quadnite/snuggle/7.gif"
-		],
 		"forms": {
 			"none": "{} is snuggling",
 			"others": "{} is snuggling {}",
@@ -937,13 +368,6 @@
 		}
 	},
 	"stab": {
-		"gifs": [
-			"https://webionite.com/quadnite/stab/0.gif",
-			"https://webionite.com/quadnite/stab/1.gif",
-			"https://webionite.com/quadnite/stab/2.gif",
-			"https://webionite.com/quadnite/stab/3.gif",
-			"https://webionite.com/quadnite/stab/4.gif"
-		],
 		"forms": {
 			"none": "{} is stabbing",
 			"others": "{} is stabbing {}",
@@ -952,17 +376,6 @@
 		}
 	},
 	"tease": {
-		"gifs": [
-			"https://webionite.com/quadnite/tease/0.gif",
-			"https://webionite.com/quadnite/tease/1.gif",
-			"https://webionite.com/quadnite/tease/2.gif",
-			"https://webionite.com/quadnite/tease/3.gif",
-			"https://webionite.com/quadnite/tease/4.gif",
-			"https://webionite.com/quadnite/tease/5.gif",
-			"https://webionite.com/quadnite/tease/6.gif",
-			"https://webionite.com/quadnite/tease/7.gif",
-			"https://webionite.com/quadnite/tease/8.gif"
-		],
 		"forms": {
 			"none": "{} is teasing",
 			"others": "{} is teasing {}",
@@ -971,16 +384,6 @@
 		}
 	},
 	"think": {
-		"gifs": [
-			"https://webionite.com/quadnite/think/0.gif",
-			"https://webionite.com/quadnite/think/1.gif",
-			"https://webionite.com/quadnite/think/2.gif",
-			"https://webionite.com/quadnite/think/3.gif",
-			"https://webionite.com/quadnite/think/4.gif",
-			"https://webionite.com/quadnite/think/5.gif",
-			"https://webionite.com/quadnite/think/6.gif",
-			"https://webionite.com/quadnite/think/7.gif"
-		],
 		"forms": {
 			"none": "{} is thinking",
 			"others": "{} is thinking with {}",
@@ -989,15 +392,6 @@
 		}
 	},
 	"thumbsup": {
-		"gifs": [
-			"https://webionite.com/quadnite/thumbsup/0.gif",
-			"https://webionite.com/quadnite/thumbsup/1.gif",
-			"https://webionite.com/quadnite/thumbsup/2.gif",
-			"https://webionite.com/quadnite/thumbsup/3.gif",
-			"https://webionite.com/quadnite/thumbsup/4.gif",
-			"https://webionite.com/quadnite/thumbsup/5.gif",
-			"https://webionite.com/quadnite/thumbsup/6.gif"
-		],
 		"forms": {
 			"none": "{} is giving a thumbs up",
 			"others": "{} is giving a thumbs up to {}",
@@ -1006,15 +400,6 @@
 		}
 	},
 	"tickle": {
-		"gifs": [
-			"https://webionite.com/quadnite/tickle/0.gif",
-			"https://webionite.com/quadnite/tickle/1.gif",
-			"https://webionite.com/quadnite/tickle/2.gif",
-			"https://webionite.com/quadnite/tickle/3.gif",
-			"https://webionite.com/quadnite/tickle/4.gif",
-			"https://webionite.com/quadnite/tickle/5.gif",
-			"https://webionite.com/quadnite/tickle/6.gif"
-		],
 		"forms": {
 			"none": "{} is tickling",
 			"others": "{} is tickling {}",
@@ -1023,16 +408,6 @@
 		}
 	},
 	"triggered": {
-		"gifs": [
-			"https://webionite.com/quadnite/triggered/0.gif",
-			"https://webionite.com/quadnite/triggered/1.gif",
-			"https://webionite.com/quadnite/triggered/2.gif",
-			"https://webionite.com/quadnite/triggered/3.gif",
-			"https://webionite.com/quadnite/triggered/4.gif",
-			"https://webionite.com/quadnite/triggered/5.gif",
-			"https://webionite.com/quadnite/triggered/6.gif",
-			"https://webionite.com/quadnite/triggered/7.gif"
-		],
 		"forms": {
 			"none": "{} is triggered",
 			"others": "{} is triggered by {}",
@@ -1041,28 +416,6 @@
 		}
 	},
 	"twerk": {
-		"gifs": [
-			"https://webionite.com/quadnite/twerk/0.gif",
-			"https://webionite.com/quadnite/twerk/1.gif",
-			"https://webionite.com/quadnite/twerk/2.gif",
-			"https://webionite.com/quadnite/twerk/3.gif",
-			"https://webionite.com/quadnite/twerk/4.gif",
-			"https://webionite.com/quadnite/twerk/5.gif",
-			"https://webionite.com/quadnite/twerk/6.gif",
-			"https://webionite.com/quadnite/twerk/7.gif",
-			"https://webionite.com/quadnite/twerk/8.gif",
-			"https://webionite.com/quadnite/twerk/9.gif",
-			"https://webionite.com/quadnite/twerk/10.gif",
-			"https://webionite.com/quadnite/twerk/11.gif",
-			"https://webionite.com/quadnite/twerk/12.gif",
-			"https://webionite.com/quadnite/twerk/13.gif",
-			"https://webionite.com/quadnite/twerk/14.gif",
-			"https://webionite.com/quadnite/twerk/15.gif",
-			"https://webionite.com/quadnite/twerk/16.gif",
-			"https://webionite.com/quadnite/twerk/17.gif",
-			"https://webionite.com/quadnite/twerk/18.gif",
-			"https://webionite.com/quadnite/twerk/19.gif"
-		],
 		"forms": {
 			"none": "{} is twerking",
 			"others": "{} is twerking with {}",
@@ -1071,15 +424,6 @@
 		}
 	},
 	"wag": {
-		"gifs": [
-			"https://webionite.com/quadnite/wag/0.gif",
-			"https://webionite.com/quadnite/wag/1.gif",
-			"https://webionite.com/quadnite/wag/2.gif",
-			"https://webionite.com/quadnite/wag/3.gif",
-			"https://webionite.com/quadnite/wag/4.gif",
-			"https://webionite.com/quadnite/wag/5.gif",
-			"https://webionite.com/quadnite/wag/6.gif"
-		],
 		"forms": {
 			"none": "{} is wagging",
 			"others": "{} is wagging at {}",
@@ -1088,16 +432,6 @@
 		}
 	},
 	"wave": {
-		"gifs": [
-			"https://webionite.com/quadnite/wave/0.gif",
-			"https://webionite.com/quadnite/wave/1.gif",
-			"https://webionite.com/quadnite/wave/2.gif",
-			"https://webionite.com/quadnite/wave/3.gif",
-			"https://webionite.com/quadnite/wave/4.gif",
-			"https://webionite.com/quadnite/wave/5.gif",
-			"https://webionite.com/quadnite/wave/6.gif",
-			"https://webionite.com/quadnite/wave/7.gif"
-		],
 		"forms": {
 			"none": "{} is waving",
 			"others": "{} is waving at {}",
@@ -1106,19 +440,6 @@
 		}
 	},
 	"wink": {
-		"gifs": [
-			"https://webionite.com/quadnite/wink/0.gif",
-			"https://webionite.com/quadnite/wink/1.gif",
-			"https://webionite.com/quadnite/wink/2.gif",
-			"https://webionite.com/quadnite/wink/3.gif",
-			"https://webionite.com/quadnite/wink/4.gif",
-			"https://webionite.com/quadnite/wink/5.gif",
-			"https://webionite.com/quadnite/wink/6.gif",
-			"https://webionite.com/quadnite/wink/7.gif",
-			"https://webionite.com/quadnite/wink/8.gif",
-			"https://webionite.com/quadnite/wink/9.gif",
-			"https://webionite.com/quadnite/wink/10.gif"
-		],
 		"forms": {
 			"none": "{} is winking",
 			"others": "{} is winking at {}",
@@ -1127,19 +448,6 @@
 		}
 	},
 	"yes": {
-		"gifs": [
-			"https://webionite.com/quadnite/yes/0.gif",
-			"https://webionite.com/quadnite/yes/1.gif",
-			"https://webionite.com/quadnite/yes/2.gif",
-			"https://webionite.com/quadnite/yes/3.gif",
-			"https://webionite.com/quadnite/yes/4.gif",
-			"https://webionite.com/quadnite/yes/5.gif",
-			"https://webionite.com/quadnite/yes/6.gif",
-			"https://webionite.com/quadnite/yes/7.gif",
-			"https://webionite.com/quadnite/yes/8.gif",
-			"https://webionite.com/quadnite/yes/9.gif",
-			"https://webionite.com/quadnite/yes/10.gif"
-		],
 		"forms": {
 			"none": "{} is saying yes",
 			"others": "{} is saying yes to {}",

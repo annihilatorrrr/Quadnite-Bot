@@ -8,9 +8,8 @@ function joinUsers(users) {
 }
 
 
-module.exports = (forms, gifs) => (ctx) => {
+module.exports = (forms, getGif) => (ctx) => {
 
-	const gif = gifs[Math.floor(Math.random() * gifs.length)];
 	const message = ctx.message.text.replace(/^[^ ]+\s*/, "")
 		.match(/^((@\w+(\s+|$))*)(.*)/);
 	const users = message[1].trim().split(" ").filter(i => i.length);
@@ -39,6 +38,7 @@ module.exports = (forms, gifs) => (ctx) => {
 		reply = forms.none
 			.replace("{}", user);
 
-	ctx.replyWithAnimation(gif, {caption: reply});
+	getGif()
+		.then(gif => ctx.replyWithAnimation(gif.data.url, {caption: reply}));
 
 };
