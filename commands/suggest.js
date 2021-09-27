@@ -16,9 +16,10 @@ function ugokiUpload(axios, ugokiRoot, ctx, category, path) {
 		})
 		.catch((err) => {
 
-			if (err.response.status == 404)
+			console.error(err);
+			if (err.response && err.response.status == 404)
 				ctx.reply("Category doesn't exist");
-			else if (err.response.status == 409)
+			else if (err.response && err.response.status == 409)
 				ctx.reply("Already suggested / added.");
 			else
 				ctx.reply("No clue what the hell happened but adding suggestion failed.");
