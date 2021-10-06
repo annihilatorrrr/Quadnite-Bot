@@ -143,6 +143,9 @@
 			"both": "{} is glomping {} for {}"
 		}
 	},
+	"handhold": {
+		"alias": "holdhands"
+	},
 	"happy": {
 		"forms": {
 			"none": "{} is happy",
@@ -319,6 +322,9 @@
 			"both": "{} is running from {} for {}"
 		}
 	},
+	"runs": {
+		"alias": "run"
+	},
 	"shoot": {
 		"forms": {
 			"none": "{} is shooting",
@@ -357,6 +363,18 @@
 			"others": "{} is sleeping with {}",
 			"reason": "{} is sleeping because {}",
 			"both": "{} is sleeping {} for {}"
+		}
+	},
+	"sob": {
+		"alias": "sobs"
+	},
+	"sobs": {
+		"alias": "cry",
+		"forms": {
+			"none": "{} is sobbing",
+			"others": "{} is sobbing due to {}",
+			"reason": "{} is sobbing because {}",
+			"both": "{} is sobbing due to {} because {}"
 		}
 	},
 	"snuggle": {

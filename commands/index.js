@@ -67,16 +67,35 @@ module.exports = (bot, [ questions, kys, insults, commands_list, words, roleplay
 		+ "chatting with me in private, you are most likely doing it wrong. "
 		+ "Add me to a group for fun. To give feedback, use /feedback"));
 
-	const getGetGif = (command) => () => axios.get(
-		`category/${command}/gif`,
-		{
-			baseURL: ugokiRoot
-		}
-	);
+	function getGetGif(command) {
+
+		const alias = roleplay_data[command].alias;
+		if (alias)
+			return getGetGif(alias);
+
+		return () => axios.get(
+			`category/${command}/gif`,
+			{
+				baseURL: ugokiRoot
+			}
+		);
+
+	}
+
+	function getForms(name) {
+
+		if (roleplay_data[name].forms)
+			return roleplay_data[name].forms;
+		return getForms(roleplay_data[name].alias);
+
+	}
 
 	// Add all roleplay commands
 	Object.keys(roleplay_data).map(command =>
-		bot.command(command, ctx => roleplay(roleplay_data[command].forms, getGetGif(command))(ctx)));
+		bot.command(command,
+			(ctx) => roleplay(getForms(command), getGetGif(command))(ctx)
+		)
+	);
 
 	bot.command("suggest", (ctx) => suggest(axios, apiToken, ugokiRoot)(ctx));
 
