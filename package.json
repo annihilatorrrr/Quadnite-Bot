@@ -22,7 +22,7 @@
   },
   "homepage": "https://gitlab.com/ceda_ei/Quadnite-Bot#readme",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^1.6.0",
     "fluent-ffmpeg": "^2.1.2",
     "form-data": "^4.0.0",
     "telegraf": "^3.27.1"
